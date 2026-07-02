@@ -394,8 +394,24 @@ img { max-width: 100%; display: block; }
 }
 
 .entry-media {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.img-wrap-full {
+  width: 100%;
+}
+
+.entry-media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.img-wrap-stack {
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
@@ -456,7 +472,7 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 680px) {
-  .entry-media { grid-template-columns: 1fr; }
+  .entry-media-grid { grid-template-columns: 1fr; }
   .img-slot-wide { grid-column: auto; }
 }
 
