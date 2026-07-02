@@ -400,6 +400,12 @@ img { max-width: 100%; display: block; }
 }
 
 .img-slot-wide { grid-column: 1 / -1; }
+.img-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
 
 .img-slot {
   aspect-ratio: 16 / 10;
