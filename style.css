@@ -394,9 +394,7 @@ img { max-width: 100%; display: block; }
 }
 
 .entry-media {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
 }
 
 .img-wrap-full {
