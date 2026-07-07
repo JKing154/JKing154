@@ -425,7 +425,6 @@ img { max-width: 100%; display: block; }
 }
 
 .img-slot {
-  aspect-ratio: 16 / 10;
   border: 1.5px dashed var(--hairline);
   border-radius: 4px;
   display: flex;
