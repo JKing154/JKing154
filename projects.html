@@ -10,7 +10,25 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">James King</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">MENU</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="internships.html">Internships</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="https://linkedin.com/in/jamesk1014" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </nav>
+  </div>
+</header>
 
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
 <div class="page-header">
   <p class="eyebrow">WHAT I'M WORKING ON</p>
   <h1>Projects</h1>
@@ -44,13 +62,13 @@
     <div class="entry-body">
       <div class="entry-media">
         <div class="img-wrap">
-          <div class="img-slot" 
+          <div class="img-slot">
             <img src="IMG_3293.jpeg" alt="Finished steering wheels" style="width:100%; height:100%; object-fit:cover; object-position: center bottom; border-radius:3px;">
           </div>
           <p class="img-caption">Both 2026 competition steering wheels</p>
         </div>
         <div class="img-wrap">
-          <div class="img-slot" 
+          <div class="img-slot">
             <img src="IMG_2302.jpeg" alt="3 Point bend test setup" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
           </div>
           <p class="img-caption">Three-point bend test setup</p>
@@ -191,13 +209,11 @@
 
     <div class="entry-body">
       <div class="entry-media">
-        <div class="img-wrap">
+       <div class="img-wrap" style="grid-column: 1 / -1;">
           <div class="img-slot">
             <img src="IMG_3685.jpeg" alt="2013 BMW 335i" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
           </div>
           <p class="img-caption">2013 BMW 335i F30</p>
-       
-        
         </div>
       </div>
       <div class="entry-text">
