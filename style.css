@@ -395,6 +395,8 @@ img { max-width: 100%; display: block; }
 
 .entry-media {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
 .img-wrap-full {
@@ -431,6 +433,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ECE9E0 10px, #ECE9E0 11px);
   transition: border-color 0.15s ease;
+  overflow: hidden;
 }
 
 .img-slot:hover { border-color: var(--accent); }
@@ -457,6 +460,7 @@ img { max-width: 100%; display: block; }
 .img-wrap {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .entry-text { max-width: 680px; }
