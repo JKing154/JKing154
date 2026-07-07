@@ -11,20 +11,6 @@
 </head>
 <body>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-mark">James King</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">MENU</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="internships.html">Internships</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://linkedin.com/in/jamesk2" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </nav>
-  </div>
-</header>
-
 <div class="page-header">
   <p class="eyebrow">WHAT I'M WORKING ON</p>
   <h1>Projects</h1>
@@ -35,7 +21,7 @@
 
 <section class="content">
 
-  <!-- ===================== CATEGORY: FSAE / TECHNICAL ===================== -->
+  <!-- ===================== CATEGORY: FSAE ===================== -->
   <div class="category-header">
     <h2>Cornell Racing — FSAE</h2>
     <div class="rule"></div>
@@ -45,60 +31,97 @@
     <div class="entry-head">
       <span class="entry-index">01</span>
       <h2 class="entry-title">Steering Wheel — Carbon Sandwich Panel</h2>
-      <span class="entry-sub">Ergonomics Subteam</span>
+      <span class="entry-sub">Ergonomics Subteam · Cornell Racing</span>
     </div>
 
     <div class="spec-strip">
-      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">Part designer</span></div>
-      <div class="spec"><span class="spec-key">MATERIAL</span><span class="spec-val">[ CFRP sandwich panel — core TBD ]</span></div>
+      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">Part Designer</span></div>
+      <div class="spec"><span class="spec-key">MATERIAL</span><span class="spec-val">CFRP sandwich panel</span></div>
       <div class="spec"><span class="spec-key">TEST</span><span class="spec-val">3-pt bend, 700N threshold</span></div>
-      <div class="spec"><span class="spec-key">RESULT</span><span class="spec-val">[ panel/layup selected ]</span></div>
+      <div class="spec"><span class="spec-key">RESULT</span><span class="spec-val">30% weight cut, 32 N/g strength-to-weight</span></div>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media" style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="entry-media">
+        <div class="img-wrap">
           <div class="img-slot">
-            <img src="IMG_3293.jpeg" alt="hose flex test rack" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
+            <img src="IMG_3293.jpeg" alt="Finished steering wheels">
           </div>
-          <p class="img-caption">Finished steering wheels</p>
+          <p class="img-caption">2025 and 2026 competition steering wheels</p>
         </div>
         <div class="img-wrap">
           <div class="img-slot">
-            <img src="IMG_2302.jpeg" alt="Wheel Test Setup" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
-          <p class="img-caption">Bend test setup</p>
+            <img src="IMG_2302.jpeg" alt="3 point bend test setup">
+          </div>
+          <p class="img-caption">Three-point bend test setup</p>
         </div>
       </div>
       <div class="entry-text">
-        <p class="placeholder-text">[ Paste writeup here. ]</p>
+        <p>
+          Designed and fabricated the 2026 Cornell Racing steering wheel through multiple
+          driver-tested iterations. The goal was to cut weight from the previous year while
+          keeping the wheel strong enough to handle real race loads and improving how it
+          actually feels to drive with.
+        </p>
+        <p>
+          To validate the panel material, I ran three-point bend tests across four different
+          carbon fiber sandwich layup configurations. All four panels cleared the 700N
+          structural threshold, so I selected the lightest one that still passed. The final
+          wheel came in 30% lighter than the prior year with a 32 N/g strength-to-weight ratio.
+        </p>
       </div>
     </div>
   </article>
 
   <div class="rule rule-light"></div>
 
+  <!-- ===================== HERTZ TRAP ===================== -->
   <article class="entry">
     <div class="entry-head">
       <span class="entry-index">02</span>
-      <h2 class="entry-title">Monocoque Composite Panel Testing</h2>
-      <span class="entry-sub">Structural Validation</span>
+      <h2 class="entry-title">HertzTrap — Spotted Lanternfly Zapper</h2>
+      <span class="entry-sub">MAE 2250 Mechanical Design · Cornell University · People's Choice Award</span>
     </div>
 
     <div class="spec-strip">
-      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">[ ... ]</span></div>
-      <div class="spec"><span class="spec-key">METHOD</span><span class="spec-val">3-point bend validation</span></div>
-      <div class="spec"><span class="spec-key">PANELS TESTED</span><span class="spec-val">[ N candidates ]</span></div>
-      <div class="spec"><span class="spec-key">OUTCOME</span><span class="spec-val">[ layup selected ]</span></div>
+      <div class="spec"><span class="spec-key">CLASS</span><span class="spec-val">MAE 2250 Mechanical Design</span></div>
+      <div class="spec"><span class="spec-key">FREQUENCY</span><span class="spec-val">60 Hz attraction (USDA study)</span></div>
+      <div class="spec"><span class="spec-key">MECHANISM</span><span class="spec-val">Frequency lure + electrified mesh</span></div>
+      <div class="spec"><span class="spec-key">AWARD</span><span class="spec-val">People's Choice — full class vote</span></div>
     </div>
 
     <div class="entry-body">
       <div class="entry-media">
-        <div class="img-slot img-slot-wide"><span class="img-slot-label">+ IMAGE — load vs. deflection plot</span></div>
+        <div class="img-wrap">
+          <div class="img-slot">
+            <img src="IMG_3146.jpeg" alt="HertzTrap finished device">
+          </div>
+          <p class="img-caption">Finished HertzTrap device</p>
+        </div>
+        <div class="img-wrap">
+          <div class="img-slot">
+            <img src="MAE2250.pdf" alt="HertzTrap poster">
+          </div>
+          <p class="img-caption">MAE 2250 design poster</p>
+        </div>
       </div>
       <div class="entry-text">
-        <p class="placeholder-text">[ Paste writeup here. ]</p>
+        <p>
+          Built for Cornell's MAE 2250 Mechanical Design course, HertzTrap is a bug zapper
+          designed specifically to target spotted lanternflies. A USDA study identified that
+          spotted lanternflies are attracted to 60 Hz light frequency, so we used that as the
+          lure mechanism, drawing them toward an electrified mesh that kills on contact.
+        </p>
+        <p>
+          The project covered the full design cycle from concept through fabrication and a
+          final class presentation. It won People's Choice out of the entire class, voted on
+          by peers and faculty.
+        </p>
       </div>
     </div>
   </article>
+
+  <div class="rule rule-light"></div>
 
   <!-- ===================== CATEGORY: AI ASSISTANT ===================== -->
   <div class="category-header">
@@ -110,25 +133,38 @@
     <div class="entry-head">
       <span class="entry-index">03</span>
       <h2 class="entry-title">Raspberry Pi Voice Assistant</h2>
-      <span class="entry-sub">Personal Hardware/Software Project</span>
+      <span class="entry-sub">Personal Hardware / Software Project</span>
     </div>
 
     <div class="spec-strip">
       <div class="spec"><span class="spec-key">HARDWARE</span><span class="spec-val">Pi Zero 2W, Whisplay HAT, PiSugar 3</span></div>
       <div class="spec"><span class="spec-key">STACK</span><span class="spec-val">Groq, faster-whisper, Piper TTS</span></div>
-      <div class="spec"><span class="spec-key">GOAL</span><span class="spec-val">Pocket-sized, subscription-free agent</span></div>
-      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">[ in progress ]</span></div>
+      <div class="spec"><span class="spec-key">GOAL</span><span class="spec-val">Pocket-sized, subscription-free</span></div>
+      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">Working build, tuning latency</span></div>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media" style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-        <div class="img-slot">
-            <img src="IMG_3685.jpeg" alt="hose flex test rack" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
-          <p class="img-caption">Assembled device</p>
+      <div class="entry-media">
+        <div class="img-wrap">
+          <div class="img-slot">
+            <img src="IMG_3684.jpeg" alt="Assembled Pi voice assistant">
+          </div>
+          <p class="img-caption">Assembled pocket AI assistant</p>
         </div>
       </div>
       <div class="entry-text">
-        <p class="placeholder-text">[ Paste writeup here — what it does, why you built it, the latency challenge on the Pi Zero 2W, etc. ]</p>
+        <p>
+          Built a pocket-sized AI voice assistant using a Raspberry Pi Zero 2W, a Whisplay
+          audio HAT, and a PiSugar 3 battery so it runs fully untethered. The goal was a
+          device that works without any subscription or cloud dependency — everything either
+          runs locally on the Pi or hits a free API tier.
+        </p>
+        <p>
+          Speech recognition uses faster-whisper running locally (tiny model to stay within
+          the Pi Zero's limited RAM), the language model runs through Groq's API for speed,
+          and text-to-speech uses Piper locally. The main remaining challenge is response
+          latency — getting the full pipeline fast enough to feel natural to talk to.
+        </p>
       </div>
     </div>
   </article>
@@ -143,22 +179,23 @@
     <div class="entry-head">
       <span class="entry-index">04</span>
       <h2 class="entry-title">2013 BMW 335i (F30)</h2>
-      <span class="entry-sub">Personal Project Car</span>
+      <span class="entry-sub">Personal Project Car · N55 Engine</span>
     </div>
 
     <div class="spec-strip">
-      <div class="spec"><span class="spec-key">PLATFORM</span><span class="spec-val">F30, N55 engine</span></div>
-      <div class="spec"><span class="spec-key">WORK DONE</span><span class="spec-val">[ e.g. brakes, suspension, diagnostics ]</span></div>
-      <div class="spec"><span class="spec-key">TOOLS</span><span class="spec-val">[ ... ]</span></div>
-      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">[ ongoing ]</span></div>
+      <div class="spec"><span class="spec-key">PLATFORM</span><span class="spec-val">F30, N55 turbocharged inline-6</span></div>
+      <div class="spec"><span class="spec-key">WORK DONE</span><span class="spec-val">Charge pipe, rear lights, electrical</span></div>
+      <div class="spec"><span class="spec-key">APPROACH</span><span class="spec-val">Diagnose first, then fix</span></div>
+      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">Ongoing</span></div>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media" style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="entry-media">
         <div class="img-wrap">
           <div class="img-slot">
-            <img src="IMG_9785.jpeg" alt="hose flex test rack" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
-          <p class="img-caption">The car</p>
+            <img src="IMG_9785.jpeg" alt="2013 BMW 335i">
+          </div>
+          <p class="img-caption">2013 BMW 335i F30</p>
         </div>
         <div class="img-wrap">
           <div class="img-slot"><span class="img-slot-label">+ IMAGE — work in progress</span></div>
@@ -166,7 +203,19 @@
         </div>
       </div>
       <div class="entry-text">
-        <p class="placeholder-text">[ Paste writeup here — maintenance/mod history, anything interesting you've diagnosed or fixed. ]</p>
+        <p>
+          Working on my 335i is less about following a guide and more about figuring out
+          what's actually wrong before touching anything. The N55 is a well documented
+          engine but it still throws problems that need real diagnosis — scanning codes,
+          looking at live data, and understanding what the symptom is actually pointing to
+          before ordering parts.
+        </p>
+        <p>
+          So far I have replaced the charge pipe (a known weak point on the N55 that
+          cracks under boost pressure), swapped the rear lights, and done electrical
+          troubleshooting. The car is an ongoing project and each fix teaches me something
+          about how systems interact that you just don't get from a classroom.
+        </p>
       </div>
     </div>
   </article>
@@ -181,21 +230,21 @@
     </div>
 
     <div class="spec-strip">
-      <div class="spec"><span class="spec-key">VEHICLES</span><span class="spec-val">[ list ]</span></div>
+      <div class="spec"><span class="spec-key">VEHICLES</span><span class="spec-val">[ list your family cars ]</span></div>
       <div class="spec"><span class="spec-key">WORK DONE</span><span class="spec-val">[ ... ]</span></div>
       <div class="spec"><span class="spec-key">TOOLS</span><span class="spec-val">[ ... ]</span></div>
-      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">[ ongoing ]</span></div>
+      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">Ongoing</span></div>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media" style="display:grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="entry-media">
         <div class="img-wrap">
           <div class="img-slot"><span class="img-slot-label">+ IMAGE</span></div>
-          <p class="img-caption">Image 1</p>
+          <p class="img-caption">[ caption ]</p>
         </div>
         <div class="img-wrap">
           <div class="img-slot"><span class="img-slot-label">+ IMAGE</span></div>
-          <p class="img-caption">Image 2</p>
+          <p class="img-caption">[ caption ]</p>
         </div>
       </div>
       <div class="entry-text">
@@ -205,6 +254,7 @@
   </article>
 
 </section>
+
 
 <footer class="footer">
   <span>© 2026 James King</span>
