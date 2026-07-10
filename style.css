@@ -462,7 +462,7 @@ img { max-width: 100%; display: block; }
   min-width: 0;
 }
 
-.entry-text { max-width: 680px; }
+.entry-text { max-width: 100%; }
 
 .placeholder-text {
   color: var(--graphite);
