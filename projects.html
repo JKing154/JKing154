@@ -75,20 +75,71 @@
         </div>
       </div>
       <div class="entry-text">
+        <h3>Background</h3>
         <p>
-          Designed and fabricated the 2026 Cornell Racing steering wheel through multiple
-          driver-tested iterations. The goal was to cut weight from the previous year while
-          keeping the wheel strong enough to handle real race loads and improving how it
-          actually feels to drive with.
+          The steering wheel is the primary interface between the driver and the car. It has
+          to fit within the front roll hoop clearance, accommodate drivers of different hand
+          sizes, and hold up through an entire competition day without becoming a liability.
+          Looking at the history of Cornell Racing steering wheels, each year brought a
+          different approach. The ARG24 wheel became a fan favorite for its simplicity and
+          comfort. Last year's design tried to integrate electronics and custom molded grips,
+          which added complexity without a clear payoff. For ARG26, once it was decided that
+          no buttons were needed while driving, I had a clean slate to focus purely on
+          structural performance and driver comfort.
+        </p>
+
+        <h3>Design</h3>
+        <p>
+          The ARG26 steering wheel has three main components: a carbon fiber composite central
+          panel, 3D printed grips, and a quick-disconnect. I wanted something simple and
+          effective rather than overengineered. The grips were wrapped in Alcantara fabric for
+          additional grip and cushioning, and attached to the panel with hardware. The
+          quick-disconnect connects directly to the spline spigot on the column, with grease
+          applied at the interface to address a slop issue from the prior year.
         </p>
         <p>
-          To validate the panel material, I ran three-point bend tests across four different
-          carbon fiber sandwich layup configurations. All four panels cleared the 700N
-          structural threshold, so I selected the lightest one that still passed. The final
-          wheel came in 30% lighter than the prior year with a 32 N/g strength-to-weight ratio.
+          One mid-season iteration came from driver feedback — one driver reported that the
+          lower cutout was too tight, limiting grip to only the thumb and pointer finger. I
+          stretched the bottom of the wheel downward to open that space up, staying within
+          front roll hoop clearance since the wheel never rotates more than 90 degrees.
+        </p>
+
+        <h3>Panel Testing and Material Selection</h3>
+        <p>
+          To select the right carbon fiber layup, I fabricated and tested four panel
+          configurations using a three-point bend test in Bovay Lab. All panels used a
+          3-core-3 sandwich construction with a 0.5" core unless noted:
+        </p>
+        <p>
+          Panel 1 used a 0/45 ply schedule. Panel 2 used 0/45/0. Panel 3 used 0 only.
+          Panel 4 used a 0/45/0 schedule with a thicker 0.75" core. Results showed that
+          adding a single ply per side corresponded to roughly 100 lbf of additional yield
+          strength at a cost of only 10 to 20 grams. Panel 2 was selected for the final
+          design, delivering approximately 400 lbf yield strength at 50 grams — well above
+          the 140 lbf recommended threshold while keeping the panel light. All four panels
+          cleared the structural requirement, so the decision came down to the best
+          strength-to-weight tradeoff rather than simply the strongest option.
+        </p>
+        <p>
+          One manufacturing issue during fabrication: an adhesive sheet was not fully removed
+          from an adhesive ply during layup, which caused several panels to delaminate after
+          curing. It went unnoticed until the panels came out of the oven. Working
+          independently for the first time on a composite layup, that was a hard lesson in
+          how much process discipline matters when you cannot visually inspect what is
+          happening inside the bag.
+        </p>
+
+        <h3>Driver Feedback</h3>
+        <p>
+          Grip geometry was driven entirely by driver input. The Ergo subteam developed a
+          musculoskeletal survey for drivers to complete after drive sessions, collecting
+          numerical comfort ratings across body contact points to identify what needed to
+          change. That data fed directly back into CAD iterations. The goal was not to design
+          for one driver's hand but to find geometry that worked across the range of people
+          who would be behind the wheel at competition.
         </p>
       </div>
-    </div>
+    
   </article>
 
   <div class="rule rule-light"></div>
@@ -124,16 +175,68 @@
         </div>
       </div>
       <div class="entry-text">
+        <h3>The Problem</h3>
         <p>
-          Built for Cornell's MAE 2250 Mechanical Design course, HertzTrap is a bug zapper
-          designed specifically to target spotted lanternflies. A USDA study identified that
-          spotted lanternflies are attracted to 60 Hz light frequency, so we used that as the
-          lure mechanism, drawing them toward an electrified mesh that kills on contact.
+          Spotted Lanternflies are devastating vineyards across the Northeast with no natural
+          predators and limited effective control methods. They feed directly on grapevines,
+          reducing yield and threatening plant health season after season. Our client,
+          E&J Gallo Winery, needed a solution that could intercept SLFs before they ever
+          reached the vines rather than dealing with the damage after the fact.
+        </p>
+
+        <h3>The Concept</h3>
+        <p>
+          We identified a critical behavioral weakness in the spotted lanternfly and exploited
+          it. A USDA study found that SLFs are uniquely attracted to 60 Hz frequency stimuli.
+          We adapted the proven lure-and-kill method of UV bug traps to that specific
+          frequency, creating a passive trap that draws SLFs in and eliminates them on
+          contact with an electrified dual-layer mesh. No pesticides, no manual removal, no
+          ongoing maintenance beyond deployment.
+        </p>
+
+        <h3>Prototype and Build</h3>
+        <p>
+          The HertzTrap enclosure measures approximately 8 by 8 by 2 inches and was
+          fabricated using 3D printing for rapid iteration and a rigid weatherproof housing.
+          At the center sits a 57mm speaker driven by an Arduino Nano and amplifier circuit
+          generating a continuous 60 Hz signal. Surrounding it is a dual-layer mesh system:
+          a higher-density inner copper mesh and a lower-density outer metal mesh held at
+          opposite polarities, powered by a repurposed handheld bug zapper circuit board
+          running off two AA batteries. When an SLF bridges the gap between mesh layers it
+          completes the circuit and is eliminated instantly. The outer mesh spacing was
+          specifically sized so SLFs can physically bridge the two layers while keeping out
+          debris. Four independently adjustable legs allow the trap to be staked and leveled
+          at grapevine canopy height across uneven terrain.
+        </p>
+
+        <h3>Testing and Results</h3>
+        <p>
+          We validated three key performance criteria through physical testing. Structural
+          durability was confirmed by applying incremental loads to the enclosure top — the
+          trap withstood 40 lbs without deformation or failure, exceeding our 30 lb target,
+          and we also dropped 5 to 10 lb weights from a foot high to simulate branches
+          falling on it. Adjustability was verified by extending and locking each leg
+          independently, confirming a maximum stable height of 3 feet near vine canopy level.
+          Portability was tested by timing a single user relocating the trap across a
+          simulated farm layout — consistently moved and reset in under 15 seconds, meaning
+          one person could feasibly deploy over 100 units in a standard workday at 6 lbs
+          total weight.
         </p>
         <p>
-          The project covered the full design cycle from concept through fabrication and a
-          final class presentation. It won People's Choice out of the entire class, voted on
-          by peers and faculty.
+          Successful arc discharge between the mesh layers was confirmed during bench testing,
+          validating the electrical system functions at the chosen mesh spacing. The honest
+          limitation is that biological testing with live insects was not conducted, so kill
+          reliability and attraction range under real field conditions remain the most
+          important unknowns for future development.
+        </p>
+
+        <h3>Outcome</h3>
+        <p>
+          The HertzTrap won People's Choice out of the entire MAE 2250 class, voted on by
+          peers and faculty. Future development would focus on solar power integration for
+          continuous field operation, a custom compact circuit board, and controlled field
+          experiments to quantify attraction range and capture rate with live insects in a
+          vineyard environment.
         </p>
       </div>
     </div>
