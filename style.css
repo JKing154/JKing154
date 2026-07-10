@@ -389,7 +389,8 @@ img { max-width: 100%; display: block; }
 }
 
 .entry-body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 28px;
 }
 
