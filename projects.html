@@ -26,11 +26,7 @@
   </div>
 </header>
 
-<script>
-  document.getElementById('navToggle').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
-</script>
+
 <div class="page-header">
   <p class="eyebrow">WHAT I'M WORKING ON</p>
   <h1>Projects</h1>
@@ -62,7 +58,16 @@
     </div>
 
     <div class="entry-body">
-      <div class="entry-text" style="grid-column: 1 / -1;">
+      <div class="entry-media">
+        <div class="img-wrap" style="grid-column: 1 / -1;">
+          <div class="photo-pending">
+            <img src="ergo-lead.jpg" data-pending alt="Ergonomics subteam" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:3px;">
+            <span>PHOTO SLOT — upload a file named<br><b>ergo-lead.jpg</b> to the repo and it appears here</span>
+          </div>
+          <p class="img-caption">Ergonomics subteam — ARG27</p>
+        </div>
+      </div>
+      <div class="entry-text">
         <p>
           As Ergonomics Lead for the ARG27 car, I'm responsible for every system the driver touches:
           the steering system, throttle and brake pedals, seat, harness, firewall, head restraint,
@@ -321,7 +326,16 @@
     </div>
 
     <div class="entry-body">
-      <div class="entry-text" style="grid-column: 1 / -1;">
+      <div class="entry-media">
+        <div class="img-wrap" style="grid-column: 1 / -1;">
+          <div class="photo-pending">
+            <img src="fea-project.jpg" data-pending alt="Ansys FEA results" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:3px;">
+            <span>PHOTO SLOT — upload a file named<br><b>fea-project.jpg</b> (Ansys stress plot screenshot works great) and it appears here</span>
+          </div>
+          <p class="img-caption">E-bike frame — von Mises stress, converged mesh</p>
+        </div>
+      </div>
+      <div class="entry-text">
         <h3>The Setup</h3>
         <p>
           Structural analysis of an e-bike frame for bike-share use, modeled as thin-walled tubes
@@ -397,37 +411,6 @@
     </div>
   </article>
 
-  <!-- ===================== CATEGORY: TOOLS ===================== -->
-  <div class="category-header">
-    <h2>Tools I've Built</h2>
-    <div class="rule"></div>
-  </div>
-
-  <article class="entry">
-    <div class="entry-head">
-      <span class="entry-index">05</span>
-      <h2 class="entry-title">Small Software, Real Problems</h2>
-      <span class="entry-sub">HTML / JS / Python — built because I needed them</span>
-    </div>
-
-    <div class="entry-body">
-      <div class="entry-text" style="grid-column: 1 / -1;">
-        <p>
-          When something in my life needs tracking or automating, I build the tool. This site is one
-          of them — hand-written HTML/CSS, deployed through GitHub Pages. Others include a
-          <a href="https://jking154.github.io/lab-log/" target="_blank" rel="noopener">workout tracker</a>
-          with progressive-overload logic and persistent local storage, an internship application
-          tracker, and interactive study guides with rendered math for dynamics and waves courses.
-          None of them are big software projects — the point is that when a spreadsheet or an app
-          doesn't quite fit the problem, writing 500 lines of JavaScript is a normal tool in the kit,
-          same as a mill or a torque wrench.
-        </p>
-      </div>
-    </div>
-  </article>
-
-  <div class="rule rule-light"></div>
-
   <!-- ===================== CATEGORY: CAR WORK ===================== -->
   <div class="category-header">
     <h2>Car Work</h2>
@@ -436,7 +419,7 @@
 
   <article class="entry">
     <div class="entry-head">
-      <span class="entry-index">06</span>
+      <span class="entry-index">05</span>
       <h2 class="entry-title">2013 BMW 335i (F30) and 1990 Volkswagen Corrado</h2>
       <span class="entry-sub">Personal Car · N55 Engine</span>
     </div>
@@ -505,11 +488,7 @@
   <span>Built &amp; deployed via GitHub Pages</span>
 </footer>
 
-<script>
-  document.getElementById('navToggle').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
-</script>
+<script src="site.js"></script>
 
 </body>
 </html>
