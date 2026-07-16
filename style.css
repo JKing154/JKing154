@@ -570,3 +570,33 @@ img { max-width: 100%; display: block; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ===== Data tables (panel testing etc.) ===== */
+.data-table{
+  width:100%;
+  border-collapse:collapse;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:13px;
+  margin:14px 0 18px;
+}
+.data-table th{
+  text-align:left;
+  font-weight:600;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.04em;
+  padding:8px 10px;
+  border-bottom:2px solid var(--ink,#1C1A17);
+}
+.data-table td{
+  padding:8px 10px;
+  border-bottom:1px solid var(--line,#DDD6C6);
+}
+.data-table .selected-row td{
+  background:var(--accent-soft,#F0D9CC);
+  font-weight:600;
+}
+@media (max-width:600px){
+  .data-table{font-size:11px;}
+  .data-table th,.data-table td{padding:6px 5px;}
+}
