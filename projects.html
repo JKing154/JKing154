@@ -174,20 +174,19 @@
         <p>All panels were loaded to failure in a three-point bend fixture in Bovay Lab. Requirement: exceed 700 N.</p>
         <table class="data-table">
           <thead>
-            <tr><th>Panel</th><th>Layup (per side)</th><th>Core</th><th>Weight</th><th>Max Load</th><th>N/g</th></tr>
+            <tr><th>Panel</th><th>Ply Config</th><th>Core</th><th>Weight</th><th>Max Load</th><th>N/g</th></tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>0°</td><td>0.5"</td><td>43 g</td><td>900 N</td><td>20.9</td></tr>
-            <tr class="selected-row"><td>2 ✓</td><td>0° / 45°</td><td>0.5"</td><td>56 g</td><td>1800 N</td><td>32.1</td></tr>
-            <tr><td>3</td><td>0° / 45° / 0°</td><td>0.5"</td><td>53 g</td><td>1400 N</td><td>26.4</td></tr>
-            <tr><td>4</td><td>0° / 45° / 0°</td><td>0.75"</td><td>69 g</td><td>2000 N</td><td>29.0</td></tr>
+            <tr class="selected-row"><td>1 ✓</td><td>3-ply (0° / 45° / 0°)</td><td>0.5"</td><td>56 g</td><td>1800 N</td><td>32.1</td></tr>
+            <tr><td>2</td><td>2-ply (0° / 45°)</td><td>0.5"</td><td>43 g</td><td>1400 N</td><td>32.6</td></tr>
           </tbody>
         </table>
         <p>
-          Panel 4 was the strongest, but Panel 2 was selected: it carried 2.5x the required load at 13 g
-          less mass, the best strength-to-weight ratio of the set. The lesson from this test series was
-          that the "strongest" option is rarely the right answer — the requirement defines how much
-          strength is worth paying for in grams.
+          The 3-ply 0.5" core panel was selected for final fabrication. It exceeded the 700 N requirement
+          by 2.5x, hitting 1800 N at failure while staying under 60 grams. The 2-ply variant was stronger
+          per gram but plateaued at 1400 N, making it overweight for the performance gained. The lesson:
+          the requirement defines how much strength is worth paying for in grams — matching it precisely
+          beats chasing the theoretical maximum.
         </p>
 
         <h3>Driver Feedback</h3>
