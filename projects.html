@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Projects — FSAE steering wheel with carbon panel testing, Ansys FEA analysis, HertzTrap, Raspberry Pi voice assistant, and car restoration work.">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <title>Projects — James King</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
+<div class="curtain" aria-hidden="true"><span class="curtain-mark">JK</span><span class="curtain-sub">JAMES KING — MECHANICAL ENGINEERING</span></div>
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-mark">James King</a>
@@ -20,170 +23,170 @@
       <a href="index.html">Home</a>
       <a href="internships.html">Internships</a>
       <a href="projects.html" class="active">Projects</a>
-      <a href="resume.html">Resume</a>
+      <a href="resume.html" class="nav-cta">Resume</a>
       <a href="https://linkedin.com/in/jamesk2" target="_blank" rel="noopener">LinkedIn ↗</a>
     </nav>
   </div>
 </header>
 
-
+<div class="page-band">
+<div class="bp-grid"></div>
 <div class="page-header">
-  <p class="eyebrow">WHAT I'M WORKING ON</p>
+  <p class="eyebrow">WHAT I'VE BUILT</p>
   <h1>Projects</h1>
-  <p>FSAE projects, Hertz Trap, a pocket-sized AI assistant, and work on cars.</p>
+  <p>Formula SAE hardware, a class-winning design project, FEA work, and things I build on my own time.</p>
 </div>
-
-<div class="rule"></div>
+</div>
 
 <section class="content">
 
-  <!-- ===================== CATEGORY: FSAE ===================== -->
+  <nav class="jump-nav" aria-label="Jump to project">
+    <a href="#ergo">Ergonomics Lead</a>
+    <a href="#steering-wheel">Steering Wheel</a>
+    <a href="#hertztrap">HertzTrap</a>
+    <a href="#ebike">Beach Bike FEA</a>
+    <a href="#pi">Pi Assistant</a>
+    <a href="#cars">Car Work</a>
+  </nav>
+
+  <!-- ===================== FSAE ===================== -->
   <div class="category-header">
     <h2>Cornell Racing — FSAE</h2>
     <div class="rule"></div>
   </div>
 
-  <article class="entry">
+  <article class="entry" id="ergo">
     <div class="entry-head">
       <span class="entry-index">00</span>
       <h2 class="entry-title">Ergonomics Subteam Lead — ARG27</h2>
       <span class="entry-sub">Leading driver-interface systems for the 2027 competition car</span>
     </div>
 
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">SCOPE</span><span class="spec-val">Steering System · Pedals · Seat/Harness/Firewall · Wheel</span></div>
-      <div class="spec"><span class="spec-key">TEAM</span><span class="spec-val">Subsystem designers</span></div>
-      <div class="spec"><span class="spec-key">FITMENT</span><span class="spec-val">5th–95th percentile drivers</span></div>
-      <div class="spec"><span class="spec-key">METHOD</span><span class="spec-val">Mockup-driven, test-validated</span></div>
-    </div>
-
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap" style="grid-column: 1 / -1;">
-          <div class="photo-pending">
-            <img src="ergo-lead.jpeg" data-pending alt="Ergonomics subteam" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:3px;">
-            <span>PHOTO SLOT — upload a file named<br><b>ergo-lead.jpg</b> to the repo and it appears here</span>
+      <div class="hero-feature">
+        <div class="hero-left">
+          <div class="hero-number">
+            <div class="hero-number-val">Subteam Lead</div>
+            <div class="hero-number-label">ERGONOMICS — CORNELL RACING FSAE</div>
           </div>
-          <p class="img-caption"> Last Years Ergonomic Design — ARG26</p>
+          <div class="hero-substats">
+            <div class="hero-substat">
+              <div class="val">5th–95th</div>
+              <div class="lbl">PERCENTILE DRIVER FIT</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val">ARG27</div>
+              <div class="lbl">2027 CAR</div>
+            </div>
+          </div>
+          <p class="hero-blurb">I lead the Ergonomics subteam — everything the driver touches — and this year I'm also designing the seat, firewall, and head restraint myself.</p>
+        </div>
+        <div class="hero-right">
+          <div class="hero-media-frame">
+            <div class="hero-media contain">
+              <img src="ergo-lead.jpeg" alt="Ergonomics assembly CAD">
+              <span class="bento-cap">ARG26 ERGONOMICS ASSEMBLY</span>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="entry-text">
-        <p>
-          As Ergonomics Lead for the ARG27 car, I'm responsible for every system the driver touches:
-          the steering system, throttle and brake pedals, seat, harness, firewall, head restraint,
-          and steering wheel. That means running a driver mockup program to fit every driver on the
-          team, setting stiffness and weight targets backed by FEA and component testing, and making
-          sure sensor reliability problems from last season (steering position sensors failing at
-          competition) don't happen again. The goals for the year: real adjustability across the full
-          driver range with fast swaps during endurance, every sensor tested before competition, weight
-          cut wherever it's safe with data to prove it, and safety-critical items like harness pullout
-          testing done early instead of at the deadline.
-        </p>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">AS SUBTEAM LEAD</div>
+            <div class="callout-title">Overseeing steering, the wheel, and pedals</div>
+            <div class="callout-desc">Guiding the designers on each system, with stiffness and weight targets backed by FEA and component testing.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">DESIGNING THIS YEAR</div>
+            <div class="callout-title">Seat, firewall, and head restraint</div>
+            <div class="callout-desc">My own parts for ARG27, fit to every driver on the team through the mockup program.</div>
+          </div>
+        </div>
+        <h3>Goals This Season</h3>
+        <ul class="num-list">
+          <li>Real adjustability across the full driver range, with fast swaps during endurance</li>
+          <li>Every sensor tested before competition — steering position sensors failed at competition last season</li>
+          <li>Weight cut wherever it's safe, with data to prove it</li>
+          <li>Safety-critical items like harness pullout testing done early, not at the deadline</li>
+        </ul>
       </div>
     </div>
   </article>
 
   <div class="rule rule-light"></div>
 
-  <article class="entry">
+  <article class="entry" id="steering-wheel">
     <div class="entry-head">
       <span class="entry-index">01</span>
       <h2 class="entry-title">Steering Wheel — Carbon Sandwich Panel</h2>
-      <span class="entry-sub">Ergonomics Subteam · Cornell Racing</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">Part Designer</span></div>
-      <div class="spec"><span class="spec-key">MATERIAL</span><span class="spec-val">CFRP sandwich panel</span></div>
-      <div class="spec"><span class="spec-key">TEST</span><span class="spec-val">3-pt bend, 700N threshold</span></div>
-      <div class="spec"><span class="spec-key">RESULT</span><span class="spec-val">30% weight cut, 32 N/g strength-to-weight</span></div>
+      <span class="entry-sub">Part Designer · Ergonomics Subteam · Cornell Racing</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="steering-wheels-2026.jpg" alt="Finished steering wheels" style="width:100%; height:100%; object-fit:cover; object-position: center bottom; border-radius:3px;">
+      <div class="hero-feature">
+        <div class="hero-left">
+          <div class="hero-number">
+            <div class="hero-number-val">2.5×</div>
+            <div class="hero-number-label">THE 700 N REQUIREMENT, AT 56 G</div>
           </div>
-          <p class="img-caption">Both 2026 competition steering wheels</p>
+          <div class="hero-substats">
+            <div class="hero-substat">
+              <div class="val"><span data-countup="1800" data-suffix=" N">1,800 N</span></div>
+              <div class="lbl">MAX LOAD TO FAILURE</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val"><span data-countup="32.1" data-suffix=" N/g">32.1 N/g</span></div>
+              <div class="lbl">STRENGTH-TO-WEIGHT</div>
+            </div>
+          </div>
+          <p class="hero-blurb">Four carbon layups built and broken in a three-point bend fixture. Picked the best strength-to-weight, not the outright strongest — for a wheel 30% lighter than the last one.</p>
         </div>
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="bend-test-setup.jpg" alt="3 Point bend test setup" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
+        <div class="hero-right">
+          <div class="hero-media-frame">
+            <div class="hero-media" style="aspect-ratio: 7/5;">
+              <img src="steering-wheel-level.jpg" alt="Finished ARG26 steering wheel">
+              <span class="bento-cap">FINISHED ARG26 WHEEL</span>
+            </div>
           </div>
-          <p class="img-caption">Three-point bend test setup</p>
-        </div>
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="IMG_2290.jpeg" alt="Test Panels" style="width:100%; height:100%; object-fit:cover; object-position: center bottom; border-radius:3px;">
+          <div class="detail-row" style="margin: 0;">
+            <div class="bento-cell">
+              <img src="bend-test.jpg" alt="Three-point bend test setup">
+              <span class="bento-cap">3-POINT BEND TEST</span>
+            </div>
+            <div class="bento-cell">
+              <img src="panel-failure.jpg" alt="Test panel at failure">
+              <span class="bento-cap">PANEL AT FAILURE</span>
+            </div>
           </div>
-          <p class="img-caption">All Test Panels for Composite Analysis</p>
-        </div>
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="IMG_2307.jpeg" alt="Failure of Panel 3" style="width:100%; height:100%; object-fit:cover; object-position: center bottom; border-radius:3px;">
-          </div>
-          <p class="img-caption">Failure Point of Steering Panel Under Max Load</p>
         </div>
       </div>
+
       <div class="entry-text">
-        <h3>Background</h3>
-        <p>
-          The steering wheel is the primary interface between the driver and the car. It has
-          to fit within the front roll hoop clearance, accommodate drivers of different hand
-          sizes, and hold up through an entire competition day without becoming a liability.
-          Looking at the history of Cornell Racing steering wheels, each year brought a
-          different approach. The ARG24 wheel became a fan favorite for its simplicity and
-          comfort. Last year's design tried to integrate electronics and custom molded grips,
-          which added complexity without a clear payoff. For ARG26, once it was decided that
-          no buttons were needed while driving, I had a clean slate to focus purely on
-          structural performance and driver comfort.
-        </p>
+        <h3>The Brief</h3>
+        <p>Fit inside front roll hoop clearance, work for every hand size, survive a full competition day. Once ARG26 dropped buttons, the wheel became a pure structure-and-comfort problem.</p>
 
         <h3>Design</h3>
-        <p>
-          The ARG26 steering wheel has three main components: a carbon fiber composite central
-          panel, 3D printed grips, and a quick-disconnect. I wanted something simple and
-          effective rather than overengineered. The grips were wrapped in Alcantara fabric for
-          additional grip and cushioning, and attached to the panel with hardware. The
-          quick-disconnect connects directly to the spline spigot on the column, with grease
-          applied at the interface to address a slop issue from the prior year.
-        </p>
-        <p>
-          One mid-season iteration came from driver feedback — one driver reported that the
-          lower cutout was too tight, limiting grip to only the thumb and pointer finger. I
-          stretched the bottom of the wheel downward to open that space up, staying within
-          front roll hoop clearance since the wheel never rotates more than 90 degrees.
-        </p>
+        <dl class="kv-list">
+          <div class="kv-row"><dt>Central panel</dt><dd>carbon fiber composite sandwich</dd></div>
+          <div class="kv-row"><dt>Grips</dt><dd>3D printed, wrapped in Alcantara for grip and cushioning</dd></div>
+          <div class="kv-row"><dt>Mount</dt><dd>quick-disconnect onto the column spline, greased to kill last year's slop</dd></div>
+          <div class="kv-row"><dt>Mid-season fix</dt><dd>driver flagged a tight lower cutout — stretched the bottom of the wheel, still inside roll hoop clearance</dd></div>
+        </dl>
 
-        <h3>Panel Testing and Material Selection</h3>
-        <p>
-          To select the right carbon fiber layup, I fabricated and tested four panel
-          configurations using a three-point bend test in Bovay Lab. All panels used a
-          3-core-3 sandwich construction with a 0.5" core unless noted:
-        </p>
-        <p>
-          Panel 1 used a 0/45 ply schedule. Panel 2 used 0/45/0. Panel 3 used 0 only.
-          Panel 4 used a 0/45/0 schedule with a thicker 0.75" core. Results showed that
-          adding a single ply per side corresponded to roughly 100 lbf of additional yield
-          strength at a cost of only 10 to 20 grams. Panel 2 was selected for the final
-          design, delivering approximately 400 lbf yield strength at 50 grams — well above
-          the 140 lbf recommended threshold while keeping the panel light. All four panels
-          cleared the structural requirement, so the decision came down to the best
-          strength-to-weight tradeoff rather than simply the strongest option.
-        </p>
-        <p>
-          One manufacturing issue during fabrication: an adhesive sheet was not fully removed
-          from an adhesive ply during layup, which caused several panels to delaminate after
-          curing. It went unnoticed until the panels came out of the oven. Working
-          independently for the first time on a composite layup, that was a hard lesson in
-          how much process discipline matters when you cannot visually inspect what is
-          happening inside the bag.
-        </p>
-
+        <div class="detail-row tall">
+          <div class="bento-cell">
+            <img src="steering-wheels-2026.jpg" alt="Both 2026 steering wheels installed">
+            <span class="bento-cap">BOTH 2026 WHEELS</span>
+          </div>
+          <div class="bento-cell">
+            <img src="test-panels.jpg" alt="All four test panels">
+            <span class="bento-cap">ALL FOUR TEST PANELS</span>
+          </div>
+        </div>
 
         <h3>Panel Test Data</h3>
-        <p>All panels were loaded to failure in a three-point bend fixture in Bovay Lab. Requirement: exceed 700 N.</p>
         <table class="data-table">
           <thead>
             <tr><th>Panel</th><th>Layup (per side)</th><th>Core</th><th>Weight</th><th>Max Load</th><th>N/g</th></tr>
@@ -195,312 +198,292 @@
             <tr><td>4</td><td>0° / 45° / 0°</td><td>0.75"</td><td>69 g</td><td>2000 N</td><td>29.0</td></tr>
           </tbody>
         </table>
-        <p>
-          The 3-ply 0.5" core panel was selected for final fabrication. It exceeded the 700 N requirement
-          by 2.5x, hitting 1800 N at failure while staying under 60 grams. The thicker 0.75" core panel was
-          strongest at 2000 N, but the extra weight and thickness didn't justify the gain. The lesson: the requirement 
-          defines how much strength is worth paying for in grams, matching it precisely, beats chasing the theoretical maximum.
-        </p>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">FINDING</div>
+            <div class="callout-title">Each added ply per side ≈ +100 lbf yield for only 10–20 g</div>
+            <div class="callout-desc">The thicker 0.75" core was strongest at 2000 N, but not worth the extra 13 g and thickness.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">LESSON</div>
+            <div class="callout-title">An unremoved adhesive backing sheet delaminated several panels</div>
+            <div class="callout-desc">Unnoticed until they came out of the oven — process discipline matters most when you can't see inside the bag.</div>
+          </div>
+        </div>
 
         <h3>Driver Feedback</h3>
-        <p>
-          Grip geometry was driven entirely by driver input. The Ergo subteam developed a
-          musculoskeletal survey for drivers to complete after drive sessions, collecting
-          numerical comfort ratings across body contact points to identify what needed to
-          change. That data fed directly back into CAD iterations. The goal was not to design
-          for one driver's hand but to find geometry that worked across the range of people
-          who would be behind the wheel at competition.
-        </p>
+        <p>Grip geometry came from a musculoskeletal survey drivers filled out after sessions — numerical comfort ratings per contact point, fed straight back into CAD.</p>
       </div>
     </div>
   </article>
 
   <div class="rule rule-light"></div>
 
-  <!-- ===================== HERTZ TRAP ===================== -->
-  <article class="entry">
+  <!-- ===================== HERTZTRAP ===================== -->
+  <article class="entry" id="hertztrap">
     <div class="entry-head">
       <span class="entry-index">02</span>
       <h2 class="entry-title">HertzTrap — Spotted Lanternfly Zapper</h2>
-      <span class="entry-sub">MAE 2250 Mechanical Design · Cornell University · People's Choice Award</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">CLASS</span><span class="spec-val">MAE 2250 Mechanical Design</span></div>
-      <div class="spec"><span class="spec-key">FREQUENCY</span><span class="spec-val">60 Hz attraction (USDA study)</span></div>
-      <div class="spec"><span class="spec-key">MECHANISM</span><span class="spec-val">Frequency lure + electrified mesh</span></div>
-      <div class="spec"><span class="spec-key">AWARD</span><span class="spec-val">People's Choice — full class vote</span></div>
+      <span class="entry-sub">MAE 2250 Mechanical Design · Client: E&amp;J Gallo Winery</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="hertztrap-device.jpg" alt="HertzTrap finished device" style="width:100%; height:100%; object-fit:cover;object-position: center bottom; border-radius:3px;">
+      <div class="hero-feature">
+        <div class="hero-left">
+          <div class="award">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+            <div>
+              <div class="award-title">People's Choice Award</div>
+              <div class="award-sub">VOTED BY PEERS + FACULTY, FULL MAE 2250 CLASS</div>
+            </div>
           </div>
-          <p class="img-caption">Finished HertzTrap device</p>
+          <div class="hero-substats">
+            <div class="hero-substat">
+              <div class="val">&lt;15 s</div>
+              <div class="lbl">ONE-PERSON RELOCATE</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val">60 Hz</div>
+              <div class="lbl">LURE FREQUENCY</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val">6 lb</div>
+              <div class="lbl">TOTAL WEIGHT</div>
+            </div>
+          </div>
+          <p class="hero-blurb">A passive trap that lures lanternflies with a 60 Hz signal and kills them on an electrified mesh — no pesticides, no manual removal.</p>
         </div>
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="hertztrap-poster.jpg" alt="HertzTrap poster" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
+        <div class="hero-right">
+          <div class="hero-bento two">
+            <div class="bento-cell">
+              <img src="hertztrap-device.jpg" alt="HertzTrap finished device">
+              <span class="bento-cap">FINISHED DEVICE</span>
+            </div>
+            <div class="bento-cell contain">
+              <img src="hertztrap-poster.jpg" alt="HertzTrap design poster">
+              <span class="bento-cap">DESIGN POSTER</span>
+            </div>
           </div>
-          <p class="img-caption">MAE 2250 design poster</p>
         </div>
       </div>
+
       <div class="entry-text">
         <h3>The Problem</h3>
-        <p>
-          Spotted Lanternflies are devastating vineyards across the Northeast with no natural
-          predators and limited effective control methods. They feed directly on grapevines,
-          reducing yield and threatening plant health season after season. Our client,
-          E&J Gallo Winery, needed a solution that could intercept SLFs before they ever
-          reached the vines rather than dealing with the damage after the fact.
-        </p>
+        <p>Spotted lanternflies are devastating Northeast vineyards with no natural predators. The client needed them intercepted before they reach the vines.</p>
 
-        <h3>The Concept</h3>
-        <p>
-          We identified a critical behavioral weakness in the spotted lanternfly and exploited
-          it. A USDA study found that SLFs are uniquely attracted to 60 Hz frequency stimuli.
-          We adapted the proven lure-and-kill method of UV bug traps to that specific
-          frequency, creating a passive trap that draws SLFs in and eliminates them on
-          contact with an electrified dual-layer mesh. No pesticides, no manual removal, no
-          ongoing maintenance beyond deployment.
-        </p>
+        <h3>How It Works</h3>
+        <dl class="kv-list">
+          <div class="kv-row"><dt>Lure</dt><dd>57 mm speaker, Arduino Nano + amp, continuous 60 Hz (from a USDA attraction study)</dd></div>
+          <div class="kv-row"><dt>Kill mesh</dt><dd>dense inner copper + coarser outer mesh at opposite polarity — a bug bridging the gap completes the circuit</dd></div>
+          <div class="kv-row"><dt>Enclosure</dt><dd>~8×8×2 in, 3D printed, weatherproof</dd></div>
+          <div class="kv-row"><dt>Deployment</dt><dd>4 adjustable legs, staked and leveled at canopy height, 6 lb total</dd></div>
+        </dl>
 
-        <h3>Prototype and Build</h3>
-        <p>
-          The HertzTrap enclosure measures approximately 8 by 8 by 2 inches and was
-          fabricated using 3D printing for rapid iteration and a rigid weatherproof housing.
-          At the center sits a 57mm speaker driven by an Arduino Nano and amplifier circuit
-          generating a continuous 60 Hz signal. Surrounding it is a dual-layer mesh system:
-          a higher-density inner copper mesh and a lower-density outer metal mesh held at
-          opposite polarities, powered by a repurposed handheld bug zapper circuit board
-          running off two AA batteries. When an SLF bridges the gap between mesh layers it
-          completes the circuit and is eliminated instantly. The outer mesh spacing was
-          specifically sized so SLFs can physically bridge the two layers while keeping out
-          debris. Four independently adjustable legs allow the trap to be staked and leveled
-          at grapevine canopy height across uneven terrain.
-        </p>
-
-        <h3>Testing and Results</h3>
-        <p>
-          We validated three key performance criteria through physical testing. Structural
-          durability was confirmed by applying incremental loads to the enclosure top — the
-          trap withstood 40 lbs without deformation or failure, exceeding our 30 lb target,
-          and we also dropped 5 to 10 lb weights from a foot high to simulate branches
-          falling on it. Adjustability was verified by extending and locking each leg
-          independently, confirming a maximum stable height of 3 feet near vine canopy level.
-          Portability was tested by timing a single user relocating the trap across a
-          simulated farm layout — consistently moved and reset in under 15 seconds, meaning
-          one person could feasibly deploy over 100 units in a standard workday at 6 lbs
-          total weight.
-        </p>
-        <p>
-          Successful arc discharge between the mesh layers was confirmed during bench testing,
-          validating the electrical system functions at the chosen mesh spacing. The honest
-          limitation is that biological testing with live insects was not conducted, so kill
-          reliability and attraction range under real field conditions remain the most
-          important unknowns for future development.
-        </p>
-
-        <h3>Outcome</h3>
-        <p>
-          The HertzTrap won People's Choice out of the entire MAE 2250 class, voted on by
-          peers and faculty. Future development would focus on solar power integration for
-          continuous field operation, a custom compact circuit board, and controlled field
-          experiments to quantify attraction range and capture rate with live insects in a
-          vineyard environment.
-        </p>
+        <h3>Test Results</h3>
+        <ul class="num-list">
+          <li><strong>Structural:</strong> held 40 lb on the top (target 30) and survived 5–10 lb drops from a foot</li>
+          <li><strong>Adjustability:</strong> stable up to 3 ft, near vine canopy height</li>
+          <li><strong>Portability:</strong> moved and reset in under 15 s — 100+ units a day for one person</li>
+          <li><strong>Electrical:</strong> arc discharge between mesh layers confirmed on the bench</li>
+          <li><strong>Open question:</strong> no live-insect trials yet — field kill rate is the real unknown</li>
+        </ul>
       </div>
     </div>
   </article>
 
   <div class="rule rule-light"></div>
 
-  <!-- ===================== CATEGORY: ANALYSIS ===================== -->
+  <!-- ===================== ANALYSIS ===================== -->
   <div class="category-header">
     <h2>Simulation &amp; Analysis</h2>
     <div class="rule"></div>
   </div>
 
-  <article class="entry">
+  <article class="entry" id="ebike">
     <div class="entry-head">
       <span class="entry-index">03</span>
-      <h2 class="entry-title">E-Bike Frame — Ansys FEA &amp; Design Iteration</h2>
-      <span class="entry-sub">Structural Mechanics Simulation (FEA) Final Project · Cornell</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">TOOL</span><span class="spec-val">Ansys Workbench, shell elements</span></div>
-      <div class="spec"><span class="spec-key">VERIFICATION</span><span class="spec-val">Mesh convergence study</span></div>
-      <div class="spec"><span class="spec-key">FINDING</span><span class="spec-val">29 → 56 MPa true stress after convergence</span></div>
-      <div class="spec"><span class="spec-key">RESULT</span><span class="spec-val">Step-through redesign, SF &gt; 2</span></div>
+      <h2 class="entry-title">Beach E-Bike Frame — FEA Verification &amp; Validation</h2>
+      <span class="entry-sub">Structural Mechanics Simulation (FEA) · Class Project · Cornell</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap" style="grid-column: 1 / -1;">
-          <div class="photo-pending">
-            <img src="fea-project.jpeg" data-pending alt="Ansys FEA results" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:3px;">
-            <span>PHOTO SLOT — upload a file named<br><b>fea-project.jpg</b> (Ansys stress plot screenshot works great) and it appears here</span>
+      <div class="hero-feature">
+        <div class="hero-left">
+          <div class="hero-number">
+            <div class="hero-number-val"><span data-countup="56" data-suffix=" MPa">56 MPa</span></div>
+            <div class="hero-number-label">TRUE PEAK STRESS — COARSE MESH SAID 29</div>
           </div>
-          <p class="img-caption">E-bike frame — von Mises stress, converged mesh</p>
+          <div class="hero-substats">
+            <div class="hero-substat">
+              <div class="val">~2×</div>
+              <div class="lbl">STRESS AFTER CONVERGENCE</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val">No-go</div>
+              <div class="lbl">BEACH-BIKE VERDICT</div>
+            </div>
+          </div>
+          <p class="hero-blurb">Could a beach-cruiser e-bike work for a renewable bike-share program in beachside cities? The first model looked fine — verification contradicted it.</p>
+        </div>
+        <div class="hero-right">
+          <div class="hero-media-frame">
+            <div class="hero-media wide">
+              <img src="fea-project.jpeg" alt="E-bike frame von Mises stress plot">
+              <span class="bento-cap">VON MISES, CONVERGED MESH</span>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="entry-text">
+        <h3>The Question</h3>
+        <p>A class assignment to learn FEA verification and validation: design a new bike frame for a renewable bike-share program. I wanted to find out if a beach-cruiser style frame could work — something that could roll out along beachside cities.</p>
+
         <h3>The Setup</h3>
-        <p>
-          Structural analysis of an e-bike frame for bike-share use, modeled as thin-walled tubes
-          using shell elements rather than solids — more accurate in bending for thin sections and
-          far cheaper to solve. Loads included rider forces at the seat and pedals plus a 3 kg battery
-          mass, with aluminum alloy material properties.
-        </p>
-        <h3>Why the First Answer Was Wrong</h3>
-        <p>
-          The initial 4 mm mesh reported a peak von Mises stress of 29 MPa at the bottom bracket
-          junction. Rather than accept that, I ran a mesh convergence study — and the stress nearly
-          doubled, converging around 56 MPa. The initial mesh was significantly under-predicting stress
-          at the sharp tube intersections. It's the clearest lesson FEA teaches: an unconverged result
-          isn't a result, and the solver will happily hand you a wrong answer with full confidence.
-        </p>
-        <h3>Redesign</h3>
-        <p>
-          I then modified the geometry into a step-through frame (no top tube) for accessibility,
-          predicting the stress would migrate into the long curved tubes to the head tube. The
-          simulation confirmed the prediction, with stresses concentrating at tube junctions as
-          expected, and the final design passed the required safety factor of 2 under full rider
-          and battery loading.
-        </p>
+        <dl class="kv-list">
+          <div class="kv-row"><dt>Concept</dt><dd>beach-cruiser style e-bike frame for bike-share</dd></div>
+          <div class="kv-row"><dt>Model</dt><dd>thin-walled tubes as shell elements — more accurate in bending, far cheaper than solids</dd></div>
+          <div class="kv-row"><dt>Loads</dt><dd>rider forces at seat and pedals, plus a 3 kg battery</dd></div>
+          <div class="kv-row"><dt>Material</dt><dd>aluminum alloy</dd></div>
+        </dl>
+
+        <h3>What the Analysis Said</h3>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">FIRST ANSWER · 4 MM MESH</div>
+            <div class="callout-title">29 MPa peak — looked like it would work</div>
+            <div class="callout-desc">The coarse mesh smeared the stress at the sharp tube junctions and made the frame look safer than it was.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">VERIFIED · CONVERGED MESH</div>
+            <div class="callout-title">~56 MPa — nearly double, and a different story</div>
+            <div class="callout-desc">The two results contradicted each other. The verified one said the beach-bike plan wasn't a good one.</div>
+          </div>
+        </div>
+
+        <h3>What I Learned</h3>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">LESSON 01</div>
+            <div class="callout-title">Never trust an unverified answer</div>
+            <div class="callout-desc">The solver handed me a wrong number with full confidence. Only a convergence study caught it.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">LESSON 02</div>
+            <div class="callout-title">The best time to kill an idea is in simulation</div>
+            <div class="callout-desc">The beach-bike concept didn't hold up — much better to learn that in FEA than after building a fleet.</div>
+          </div>
+        </div>
       </div>
     </div>
   </article>
 
   <div class="rule rule-light"></div>
 
-  <!-- ===================== CATEGORY: AI ASSISTANT ===================== -->
+  <!-- ===================== PERSONAL BUILDS ===================== -->
   <div class="category-header">
-    <h2>Pocket AI Assistant</h2>
+    <h2>Personal Builds</h2>
     <div class="rule"></div>
   </div>
 
-  <article class="entry">
+  <article class="entry" id="pi">
     <div class="entry-head">
       <span class="entry-index">04</span>
-      <h2 class="entry-title">Raspberry Pi Voice Assistant</h2>
-      <span class="entry-sub">Personal Hardware / Software Project</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">HARDWARE</span><span class="spec-val">Pi Zero 2W, Whisplay HAT, PiSugar 3</span></div>
-      <div class="spec"><span class="spec-key">STACK</span><span class="spec-val">Groq, faster-whisper, Piper TTS</span></div>
-      <div class="spec"><span class="spec-key">GOAL</span><span class="spec-val">Pocket-sized, subscription-free</span></div>
-      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">Working build, tuning latency</span></div>
+      <h2 class="entry-title">Pocket AI Voice Assistant</h2>
+      <span class="entry-sub">Personal hardware / software project</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap" style="grid-column: 1 / -1;">  
-          <div class="img-slot"> 
-            <img src="pi-assistant.jpg" alt="Assembled Pi voice assistant" style="width:100%; height:100%; object-fit:cover; object-position: center bottom; border-radius:3px;">
+      <div class="mini-feature">
+        <div class="hero-media-frame">
+          <div class="hero-media">
+            <img src="pi-assistant.jpg" alt="Assembled Pi voice assistant">
+            <span class="bento-cap">ASSEMBLED BUILD</span>
           </div>
-          <p class="img-caption">Assembled pocket AI assistant</p>
         </div>
-      </div>
-      <div class="entry-text">
-        <p>
-          Built a pocket-sized AI voice assistant using a Raspberry Pi Zero 2W, a Whisplay
-          audio HAT, and a PiSugar 3 battery so it runs fully untethered. The goal was a
-          device that works without any subscription or cloud dependency — everything either
-          runs locally on the Pi or hits a free API tier.
-        </p>
-        <p>
-          Speech recognition uses faster-whisper running locally (tiny model to stay within
-          the Pi Zero's limited RAM), the language model runs through Groq's API for speed,
-          and text-to-speech uses Piper locally. The main remaining challenge is response
-          latency — getting the full pipeline fast enough to feel natural to talk to.
-        </p>
+        <div class="entry-text">
+          <span class="badge">WORKING BUILD — TUNING LATENCY</span>
+          <p style="margin-top:14px;">A pocket-sized, subscription-free voice assistant that runs untethered on battery.</p>
+          <ul class="chip-row">
+            <li>PI ZERO 2W</li>
+            <li>WHISPLAY AUDIO HAT</li>
+            <li>PISUGAR 3</li>
+            <li>FASTER-WHISPER</li>
+            <li>GROQ LLM</li>
+            <li>PIPER TTS</li>
+          </ul>
+          <p>Speech recognition runs locally on a tiny model to fit the Zero's RAM. The open problem is pipeline latency — making it fast enough to feel natural.</p>
+        </div>
       </div>
     </div>
   </article>
 
-  <!-- ===================== CATEGORY: CAR WORK ===================== -->
-  <div class="category-header">
-    <h2>Car Work</h2>
-    <div class="rule"></div>
-  </div>
+  <div class="rule rule-light"></div>
 
-  <article class="entry">
+  <article class="entry" id="cars">
     <div class="entry-head">
       <span class="entry-index">05</span>
-      <h2 class="entry-title">2013 BMW 335i (F30) and 1990 Volkswagen Corrado</h2>
-      <span class="entry-sub">Personal Car · N55 Engine</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">PLATFORM</span><span class="spec-val">F30, N55 turbocharged inline-6</span></div>
-      <div class="spec"><span class="spec-key">WORK DONE</span><span class="spec-val">Charge pipe, ABS fault, general maintainence</span></div>
-      <div class="spec"><span class="spec-key">APPROACH</span><span class="spec-val">Diagnose first, then fix</span></div>
-      <div class="spec"><span class="spec-key">STATUS</span><span class="spec-val">Ongoing</span></div>
+      <h2 class="entry-title">2013 BMW 335i and 1990 VW Corrado</h2>
+      <span class="entry-sub">Diagnose first, then fix</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="bmw-335i.jpg" alt="My BMW 335i" style="width:100%; height:100%; object-fit:cover;object-position: center bottom; border-radius:3px;">
-          </div>
-          <p class="img-caption">My BMW 335i</p>
+      <div class="detail-row">
+        <div class="bento-cell">
+          <img src="bmw-335i.jpg" alt="BMW 335i" style="object-position: center 70%;">
+          <span class="bento-cap">2013 BMW 335i · N55</span>
         </div>
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="corrado-vintage.jpg" alt="Volkswagen Corrado 10 years ago" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
-          </div>
-          <p class="img-caption">Volkswagen Corrado 10 years ago</p>
+        <div class="bento-cell">
+          <img src="corrado-vintage.jpg" alt="Volkswagen Corrado">
+          <span class="bento-cap">1990 VW CORRADO</span>
         </div>
       </div>
-      <div class="entry-text">
-        <h3>2013 BMW 335i — F30 N55</h3>
-        <p>
-          Working on the 335i is less about following a guide and more about actually
-          diagnosing what is wrong before touching anything. The N55 is well documented
-          but it still throws problems that need real troubleshooting — scanning codes,
-          pulling live data, and understanding what the symptom is actually pointing to
-          before ordering a single part. Half the job is not assuming you know the answer.
-        </p>
-        <p>
-          Work done so far: replaced the charge pipe, which is a known weak point on the
-          N55 that cracks under boost pressure and causes boost leaks. The rear brake light
-          board was fried and needed to be swapped out. Diagnosed and resolved ABS faults.
-          Replaced a faulty parking sensor. Tracked down and addressed an interior water
-          leak. Currently working through a drivetrain shudder under load, which is still
-          being diagnosed. Next up is getting ahead of things with preventative maintenance
-          before problems show up rather than after.
-        </p>
-
-        <h3>1990 Volkswagen Corrado — Restoration</h3>
-        <p>
-          The Corrado is a longer term project. This 1990 Volkswagen has traveled with my dad around 
-          England, France, Martinique, and now Watertown. It has not driven for 7 years since 
-          my dad fell ill so it needs some TLC. The car has been sitting and needs serious
-          work before it is roadworthy again. The plan is a full fuel system cleanout, timing belt
-          replacement, and adding a resonator. It is the kind of project where you pull one 
-          thing apart and find three more things that need attention, which is part of what 
-          makes it worthwhile. Working through it to have my dad ride in it once again is the final
-          goal.
-        </p>
+      <div class="entry-text split-2">
+        <div>
+          <h3>BMW 335i — Done So Far</h3>
+          <ul class="num-list">
+            <li>Replaced a cracked charge pipe — a known N55 boost-leak point</li>
+            <li>Replaced a fried rear brake light board and a faulty parking sensor</li>
+            <li>Tracked down an interior water leak</li>
+            <li>Resolved a set of ABS faults</li>
+            <li>Now diagnosing a drivetrain shudder under load</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Corrado — Restoration</h3>
+          <p>This car traveled with my dad across England, France, and Martinique, and has sat for 7 years since he fell ill.</p>
+          <ul class="chip-row">
+            <li>FUEL SYSTEM CLEANOUT</li>
+            <li>TIMING BELT</li>
+            <li>RESONATOR</li>
+          </ul>
+          <p>Goal: roadworthy again, so he can ride in it once more.</p>
+        </div>
       </div>
     </div>
   </article>
 
 </section>
 
+<section class="cta-band">
+  <div class="bp-grid"></div>
+  <div class="cta-inner">
+    <p class="eyebrow">LOOKING FOR TEST, HARDWARE &amp; DESIGN ROLES</p>
+    <h2>Let's build something — then break it on purpose.</h2>
+    <div class="cta-buttons">
+      <a class="cta-btn primary" href="resume.html">View resume →</a>
+      <a class="cta-btn" href="Jamesking_MechanicalEngineer_Resume.pdf" download>Download PDF ↓</a>
+      <a class="cta-btn" href="https://linkedin.com/in/jamesk2" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="footer-bar"><span>© 2026 James King</span><span>Built &amp; deployed via GitHub Pages</span></div>
+</section>
 
-<footer class="footer">
-  <span>© 2026 James King</span>
-  <span>Built &amp; deployed via GitHub Pages</span>
-</footer>
-
-<script src="site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="site.js?v=16"></script>
+<script src="motion.js?v=16"></script>
 
 </body>
 </html>

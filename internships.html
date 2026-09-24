@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Internships — New York Air Brake (Knorr-Bremse) test bench design, Shaw Harbor / Skip-Line manufacturing fixtures.">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <title>Internships — James King</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
+<div class="curtain" aria-hidden="true"><span class="curtain-mark">JK</span><span class="curtain-sub">JAMES KING — MECHANICAL ENGINEERING</span></div>
 
 <header class="nav">
   <div class="nav-inner">
@@ -21,176 +24,236 @@
       <a href="index.html">Home</a>
       <a href="internships.html" class="active">Internships</a>
       <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
+      <a href="resume.html" class="nav-cta">Resume</a>
       <a href="https://linkedin.com/in/jamesk2" target="_blank" rel="noopener">LinkedIn ↗</a>
     </nav>
   </div>
 </header>
 
+<div class="page-band">
+<div class="bp-grid"></div>
 <div class="page-header">
   <p class="eyebrow">WORK EXPERIENCE</p>
   <h1>Internships</h1>
-  <p>Where I've worked, what I was responsible for, and what I actually built and tested.</p>
+  <p>Two engineering internships — test hardware in a validation lab, and product fixtures on a manufacturing floor.</p>
 </div>
-
-<div class="rule"></div>
+</div>
 
 <section class="content">
 
-<!-- ===================== CURRENT — KNORR-BREMSE ===================== -->
-  <article class="entry">
+<!-- ===================== KNORR-BREMSE ===================== -->
+  <article class="entry" id="nyab">
     <div class="entry-head">
       <span class="entry-index">01</span>
       <h2 class="entry-title">New York Air Brake (Knorr-Bremse)</h2>
-      <span class="entry-sub">Mechanical Engineering Testing Intern · Watertown, NY · May 2026 – Present</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">ME Testing Intern</span></div>
-      <div class="spec"><span class="spec-key">PROJECTS</span><span class="spec-val">Impact rack · Hose flex rack</span></div>
-      <div class="spec"><span class="spec-key">LEVER ARM</span><span class="spec-val">40 lbs → 19.8 lbs, 60 mph impact</span></div>
-      <div class="spec"><span class="spec-key">RACK VALUE</span><span class="spec-val">$20K+ · international deployment</span></div>
+      <span class="entry-sub">Mechanical Engineering Testing Intern · Watertown, NY · Summer 2026</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media" style="grid-template-columns: 220px; justify-content: center;">
-        <div class="img-wrap" style="margin: 0 auto;">
-          <img src="nyab.jpg" alt="NYAB Logo" style="width:100%; height:auto; display:block; margin:0 auto; border-radius:3px;">
-          <p class="img-caption">New York Air Brake</p>
-        </div>
-      </div>
-
-      <div class="entry-media" style="display:grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 14px; align-items: start;">
-
-        <!-- VIDEO — full width on top -->
-        <div class="img-wrap" style="grid-column: 1 / -1;">
-          <div class="img-slot" style="aspect-ratio: 16/9;">
-            <video src="tripcock.mp4" poster="tripcock-poster.jpg" preload="metadata" autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover; border-radius:3px;"></video>
+      <div class="hero-feature">
+        <div class="hero-left">
+          <div class="hero-number">
+            <div class="hero-number-val"><span data-countup="61.35" data-suffix=" mph">61.35 mph</span></div>
+            <div class="hero-number-label">AT 130 PSI — TARGET WAS 60</div>
           </div>
-          <p class="img-caption">Impact rack — prior 40 mph actuation</p>
-        </div>
-
-        <!-- BOTTOM LEFT — hose flex rack -->
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="hose-flex-rack.jpg" alt="hose flex test rack" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
+          <div class="hero-substats">
+            <div class="hero-substat">
+              <div class="val"><span data-countup="-37" data-suffix="%">-37%</span></div>
+              <div class="lbl">LEVER MASS, 30.9→19.3 LB</div>
+            </div>
+            <div class="hero-substat">
+              <div class="val">$<span data-countup="1204">1,204</span></div>
+              <div class="lbl">OF $1–2K BUDGET</div>
+            </div>
           </div>
-          <p class="img-caption">Hose flex test rack, ready for deployment</p>
+          <p class="hero-blurb">Trade study ruled out faster valves and bigger hoses — redesigned the arm instead, cross-checked at 60.2 mph on independent high-speed video.</p>
         </div>
-
-        <!-- TOP RIGHT — Ansys analysis -->
-        <div class="img-wrap">
-          <div class="img-slot">
-            <img src="lever-fea.png" alt="impact rack lever" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
+        <div class="hero-right">
+          <div class="hero-media-frame">
+            <div class="hero-media">
+              <video src="impact-rack-test.mp4" poster="impact-rack-test-poster.jpg" preload="metadata" autoplay loop muted playsinline></video>
+            </div>
           </div>
-          <p class="img-caption">Ansys analysis for impact rack lever</p>
+          <div class="hero-fea-strip">
+            <div class="fea-tile">
+              <img src="lever-fea-old.png" alt="old lever arm FEA">
+              <span>Old arm — <strong>18.9 ksi</strong>, FS 1.90</span>
+            </div>
+            <div class="fea-tile">
+              <img src="lever-fea-new.png" alt="new lever arm FEA">
+              <span>New arm — <strong>21.4 ksi</strong>, FS 1.68</span>
+            </div>
+          </div>
         </div>
-
       </div>
 
       <div class="entry-text">
+        <h3>How It Came Together</h3>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="t-step">
+            <span class="t-node">01</span>
+            <div class="t-card">
+              <span class="t-label">THE ASK</span>
+              <span class="t-stat">40 → 60 mph</span>
+              <span class="t-desc">A customer raised the qualification speed past what the rack could hit.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">02</span>
+            <div class="t-card">
+              <span class="t-label">TRADE STUDY</span>
+              <span class="t-stat">4 options → 1</span>
+              <span class="t-desc">Rejected faster valves, bigger hoses, and a full rebuild. Chose a new lever and mount.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">03</span>
+            <div class="t-card">
+              <span class="t-label">DESIGN</span>
+              <span class="t-stat">Ratio 4.0 → 7.0</span>
+              <span class="t-desc">v<sub>strike</sub> = v<sub>rod</sub> × L<sub>long</sub>/L<sub>short</sub>. Needed 6.0, designed to 7.0 for margin.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">04</span>
+            <div class="t-card">
+              <span class="t-label">TEST + DEBUG</span>
+              <span class="t-stat">2 bugs killed</span>
+              <span class="t-desc">Arm sagging into its sensors, and a DAQ capping every run at 58.63 mph.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">05</span>
+            <div class="t-card">
+              <span class="t-label">RESULT</span>
+              <span class="t-stat">61.35 mph</span>
+              <span class="t-desc">Repeatable at 130 psi, cross-checked at 60.2 mph on high-speed video.</span>
+            </div>
+          </div>
+        </div>
 
-        <h3>Impact Rack</h3>
-        <p>
-          Designing and building an impact rack from concept to physical completion, engineered
-          to impact a device and test its resilience against high-speed impacts, with a target
-          strike speed of 60 mph. The rack needed to be faster than the existing setup, so I was
-          tasked with redesigning the lever arm entirely.
-        </p>
-        <p>
-          Using dynamics calculations to determine the required geometry and Ansys FEA to verify
-          the arm could survive its own impact loads, I cut the lever arm weight in half —
-          from 40 lbs to 19.8 lbs — while hitting the 60 mph actuation target. The redesign
-          also improves repeatability, making the rack usable as a standardized platform for
-          future validation programs beyond this specific application. Currently building the
-          rack to begin testing.
-        </p>
+        <h3>Old Arm vs. New Arm</h3>
+        <div class="compare">
+          <div class="compare-head"><span>METRIC</span><span>OLD</span><span></span><span class="new">NEW</span><span>CHANGE</span></div>
+          <div class="compare-row"><span class="metric">Lever ratio</span><span class="old">4.0</span><span class="arrow">→</span><span class="new">7.0</span><span class="delta">+75%</span></div>
+          <div class="compare-row"><span class="metric">Short / long arm</span><span class="old">6 / 24 in</span><span class="arrow">→</span><span class="new">5 / 35 in</span><span class="delta neutral">+10 in</span></div>
+          <div class="compare-row"><span class="metric">Mass</span><span class="old">30.9 lb</span><span class="arrow">→</span><span class="new">19.34 lb</span><span class="delta">−37%</span></div>
+          <div class="compare-row"><span class="metric">Inertia at pivot</span><span class="old">1.00×</span><span class="arrow">→</span><span class="new">1.44×</span><span class="delta neutral">not 3.06×</span></div>
+          <div class="compare-row"><span class="metric">Peak stress</span><span class="old">18.9 ksi</span><span class="arrow">→</span><span class="new">21.4 ksi</span><span class="delta neutral">+13%</span></div>
+          <div class="compare-row"><span class="metric">Factor of safety</span><span class="old">1.90</span><span class="arrow">→</span><span class="new">1.68</span><span class="delta neutral">A36 steel</span></div>
+        </div>
 
-        <h3>Hose Flex Test Rack</h3>
-        <p>
-          Responsible for sourcing, redesigning components, and producing engineering drawings
-          for a hose flex test rack that needs to be replicated across two additional units.
-          The racks are deployed to international test locations to ensure consistent methodology
-          across the company's global sites — a $20K+ project per unit in parts alone.
-        </p>
+        <h3>What Broke</h3>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">PROBLEM 01</div>
+            <div class="callout-title">Arm sagged into its own sensors mid-swing</div>
+            <div class="callout-desc">Fixed with an arc support and pivot shims. Cost speed — the trade-off I took for repeatability.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">PROBLEM 02</div>
+            <div class="callout-title">DAQ quantized speed into fixed steps</div>
+            <div class="callout-desc">Capped every run at 58.63 mph regardless of pressure. Fixed with faster sensors and a shorter timing gate.</div>
+          </div>
+        </div>
 
-        <h3>Test Floor Experience</h3>
-        <p>
-          Working daily in a large-scale testing environment: setting up and operating
-          vibration tables, Thermotron thermal chambers (hot/cold cycling), and pneumatic
-          test fixtures under constant cycling. Responsible for configuring test setups,
-          maintaining instrumentation, and ensuring test conditions match specifications
-          before any validation run begins.
-        </p>
+        <h3>Hose Flex Test Rack &amp; Test Floor</h3>
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">HOSE FLEX RACK</div>
+            <div class="callout-title">Replicated ×2 for international test sites</div>
+            <div class="callout-desc">Sourced components, redesigned fixtures, and released the drawings — $20K+ per unit in parts, so every global site runs the same method.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">TEST FLOOR</div>
+            <div class="callout-title">Set up and ran validation hardware daily</div>
+            <div class="callout-desc">Vibration tables, Thermotron hot/cold chambers, and pneumatic fixtures — configured, instrumented, and verified to spec before every run.</div>
+          </div>
+        </div>
 
+        <h3>What I'd Do Differently</h3>
+        <div class="callout-grid three">
+          <div class="callout-card">
+            <div class="callout-label">LESSON 01</div>
+            <div class="callout-title">Measuring is its own problem</div>
+            <div class="callout-desc">Destroyed sensors and 25+ no-read runs cost more time than the redesign itself.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">LESSON 02</div>
+            <div class="callout-title">FEA is an estimate</div>
+            <div class="callout-desc">The model never simulated shock loading — 70+ live impacts were the real proof.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">LESSON 03</div>
+            <div class="callout-title">One change ripples</div>
+            <div class="callout-desc">A new arm meant a new mount, holes, arc support, shims, and sensors. Pad the schedule.</div>
+          </div>
+        </div>
       </div>
     </div>
   </article>
-  <!-- ===================== PAST — SHAW HARBOR ===================== -->
-  <article class="entry">
+  <div class="rule rule-light"></div>
+
+  <!-- ===================== SHAW HARBOR ===================== -->
+  <article class="entry" id="skipline">
     <div class="entry-head">
       <span class="entry-index">02</span>
       <h2 class="entry-title">Shaw Harbor Holdings — Skip-Line LLC</h2>
-      <span class="entry-sub">Mechanical Engineering Intern · Adams, NY · Summers 2024 & 2025</span>
-    </div>
-
-    <div class="spec-strip">
-      <div class="spec"><span class="spec-key">ROLE</span><span class="spec-val">ME Intern</span></div>
-      <div class="spec"><span class="spec-key">PRODUCTS</span><span class="spec-val">Road paint measurement & data devices</span></div>
-      <div class="spec"><span class="spec-key">FIXTURE RESULT</span><span class="spec-val">25% downtime reduction</span></div>
-      <div class="spec"><span class="spec-key">AI IMPACT</span><span class="spec-val">CEO-adopted tooling rollout</span></div>
+      <span class="entry-sub">Mechanical Engineering Intern · Adams, NY · Summers 2024 &amp; 2025</span>
     </div>
 
     <div class="entry-body">
-      <div class="entry-media">
-        <div class="img-wrap" style="grid-column: 1 / -1;">
-          <div class="img-slot">
-            <img src="shaw-harbor-boat.jpg" alt="Boat ride with Shaw Harbor Execs" style="width:100%; height:100%; object-fit:cover; border-radius:3px;">
-          </div>
-          <p class="img-caption">Boat ride with Shaw Harbor Execs</p>
-        </div>
-      </div>
+      <p class="context-line">Skip-Line builds measurement devices for state DOTs — paint line thickness, paint volume, and glass bead distribution on highway markings, feeding a cloud platform for fleet reporting.</p>
+
       <div class="entry-text">
-
-        <h3>What They Do</h3>
-        <p>
-          Skip-Line builds measurement devices for state DOTs: tracking paint line thickness,
-          paint volume, and glass bead distribution on highway markings, all feeding into a
-          cloud platform for fleet reporting. I came back for a second summer, which gave 
-          me a lot more ownership over real projects.
-        </p>
-
-        <h3>Laser Fixtures & Enclosure Design</h3>
-        <p>
-          The old laser cutter fixtures were a pain to swap out. Getting a new enclosure lined
-          up meant unbolting things, realigning by hand, and hoping it was consistent. I
-          redesigned them so enclosures just drop in and cut accurately every time, no fuss.
-          That change alone cut machine downtime by 25%. I also helped develop a modular enclosure
-          platform where one base housing covers multiple product variants, just by swapping a 
-          side panel. Fewer unique parts, simpler inventory, and it helped reduce tariff exposure too.
-        </p>
-
-        <h3>NRE Pricing & AI Research</h3>
-        <p>
-          I looked at how the company was pricing NRE requests from customers and found the rates 
-          were too low for what was actually being asked of engineers. I recommended adjusting them
-          to protect engineering time without changing what customers paid overall. That recommendation
-          got implemented. I also put together a research presentation on AI tools for the executive
-          team and CEO, which ended up leading to a company-wide rollout of tools like Gamma.
-        </p>
-
+        <div class="callout-grid">
+          <div class="callout-card">
+            <div class="callout-label">LASER FIXTURES</div>
+            <div class="callout-title">Drop-in fixtures cut machine downtime 25%</div>
+            <div class="callout-desc">Old fixtures meant unbolting and realigning by hand for every enclosure swap. The redesign drops in and cuts accurately every time.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">MODULAR ENCLOSURE</div>
+            <div class="callout-title">One base housing covers every product variant</div>
+            <div class="callout-desc">Swap a side panel instead of a whole enclosure — fewer unique parts, simpler inventory, less tariff exposure.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">NRE PRICING</div>
+            <div class="callout-title">Found engineering time was underpriced</div>
+            <div class="callout-desc">Recommended adjusting NRE rates to match what customers were actually asking of engineers — implemented.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">AI RESEARCH</div>
+            <div class="callout-title">Pitched AI tools to the exec team and CEO</div>
+            <div class="callout-desc">The research presentation led to a company-wide rollout of tools like Gamma.</div>
+          </div>
+        </div>
       </div>
     </div>
   </article>
 
 </section>
 
-<footer class="footer">
-  <span>© 2026 James King</span>
-  <span>Built &amp; deployed via GitHub Pages</span>
-</footer>
+<section class="cta-band">
+  <div class="bp-grid"></div>
+  <div class="cta-inner">
+    <p class="eyebrow">LOOKING FOR TEST, HARDWARE &amp; DESIGN ROLES</p>
+    <h2>Let's build something — then break it on purpose.</h2>
+    <div class="cta-buttons">
+      <a class="cta-btn primary" href="resume.html">View resume →</a>
+      <a class="cta-btn" href="Jamesking_MechanicalEngineer_Resume.pdf" download>Download PDF ↓</a>
+      <a class="cta-btn" href="https://linkedin.com/in/jamesk2" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+  <div class="footer-bar"><span>© 2026 James King</span><span>Built &amp; deployed via GitHub Pages</span></div>
+</section>
 
-<script src="site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="site.js?v=16"></script>
+<script src="motion.js?v=16"></script>
 
 </body>
 </html>
