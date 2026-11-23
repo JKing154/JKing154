@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
 <div class="curtain" aria-hidden="true"><span class="curtain-mark">JK</span><span class="curtain-sub">JAMES KING · MECHANICAL ENGINEERING</span></div>
@@ -60,7 +60,7 @@
     <div class="entry-head">
       <span class="entry-index">00</span>
       <h2 class="entry-title">Ergonomics Subteam Lead, ARG27</h2>
-      <span class="entry-sub">Leading driver-interface systems for the 2027 competition car</span>
+      <span class="entry-sub">Subteam lead · Part designer · Driver</span>
     </div>
 
     <div class="entry-body">
@@ -72,46 +72,139 @@
           </div>
           <div class="hero-substats">
             <div class="hero-substat">
-              <div class="val">5th–95th</div>
-              <div class="lbl">PERCENTILE DRIVER FIT</div>
+              <div class="val">−8.9%</div>
+              <div class="lbl">MY PARTS' MASS VS ARG26 (PROJECTED)</div>
             </div>
             <div class="hero-substat">
-              <div class="val">ARG27</div>
-              <div class="lbl">2027 CAR</div>
+              <div class="val">≤ 7.5 kg</div>
+              <div class="lbl">ERGO PACKAGE TARGET</div>
             </div>
           </div>
-          <p class="hero-blurb">I lead the Ergonomics subteam, which covers everything the driver touches. This year I'm also designing the seat, firewall, and head restraint myself.</p>
+          <p class="hero-blurb">I lead the subteam that owns everything the driver touches. This year I'm also designing the seat, firewall, and head restraint, and I'm one of the drivers.</p>
         </div>
         <div class="hero-right">
           <div class="hero-media-frame">
             <div class="hero-media contain">
-              <img src="ergo-lead.jpeg" alt="Ergonomics assembly CAD">
-              <span class="bento-cap">ARG26 ERGONOMICS ASSEMBLY</span>
+              <img src="ergo-arg27.jpg" alt="ARG27 ergonomics assembly render">
+              <span class="bento-cap">ARG27 ERGONOMICS ASSEMBLY</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="entry-text">
-        <div class="callout-grid">
+        <div class="callout-grid three">
           <div class="callout-card">
             <div class="callout-label">AS SUBTEAM LEAD</div>
-            <div class="callout-title">Overseeing steering, the wheel, and pedals</div>
-            <div class="callout-desc">Guiding the designers on each system, with stiffness and weight targets backed by FEA and component testing.</div>
+            <div class="callout-title">Steering, the wheel, and pedals</div>
+            <div class="callout-desc">I oversee the designers on each system. Every mount gets hand calcs, and the driver position comes from sim and RAMSIS data.</div>
           </div>
           <div class="callout-card">
-            <div class="callout-label">DESIGNING THIS YEAR</div>
+            <div class="callout-label">AS PART DESIGNER</div>
             <div class="callout-title">Seat, firewall, and head restraint</div>
-            <div class="callout-desc">My own parts for ARG27, fit to every driver on the team through the mockup program.</div>
+            <div class="callout-desc">My own parts for ARG27, from rules and hand calcs through CAD and manufacturing. More on each below.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">AS A DRIVER</div>
+            <div class="callout-title">Testing my own designs</div>
+            <div class="callout-desc">I drive in our sim sessions too, so I feel the positions I'm designing instead of only reading the survey scores.</div>
           </div>
         </div>
-        <h3>Goals This Season</h3>
-        <ul class="num-list">
-          <li>Real adjustability across the full driver range, with fast swaps during endurance</li>
-          <li>Test every sensor before competition, since our steering position sensors failed at competition last season</li>
-          <li>Weight cut wherever it's safe, with data to prove it</li>
-          <li>Safety-critical items like harness pullout testing done early, not at the deadline</li>
-        </ul>
+
+        <h3>Subteam Goals</h3>
+        <div class="callout-grid three">
+          <div class="callout-card">
+            <div class="callout-label">GOAL 01</div>
+            <div class="callout-title">Fit every driver</div>
+            <div class="callout-desc">Pass the Percy template and tech the first time, with every driver secure and comfortable for a full endurance.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">GOAL 02</div>
+            <div class="callout-title">Zero compliance</div>
+            <div class="callout-desc">No flex in the seat, pedals, or steering, so the driver stays constrained through every dynamic event.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">GOAL 03</div>
+            <div class="callout-title">Light and reliable</div>
+            <div class="callout-desc">Ergo package at or under 7.5 kg, zero mounting failures, and a full rules-compliant sensor package.</div>
+          </div>
+        </div>
+
+        <h3>Setting the Driver Position With Data</h3>
+        <p>Instead of guessing where the seat, pedals, and wheel go, I built a test to measure it.</p>
+        <div class="timeline four">
+          <div class="timeline-line"></div>
+          <div class="t-step">
+            <span class="t-node">01</span>
+            <div class="t-card">
+              <span class="t-label">3D SCANS</span>
+              <span class="t-stat">RAMSIS</span>
+              <span class="t-desc">Drivers get 3D scanned, and the scans go into RAMSIS to check posture, reach, and fit.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">02</span>
+            <div class="t-card">
+              <span class="t-label">SIM MOCKUP</span>
+              <span class="t-stat">3 days, 3 setups</span>
+              <span class="t-desc">Our two returning drivers ran three seat, pedal, and wheel configurations on the HVL sim.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">03</span>
+            <div class="t-card">
+              <span class="t-label">DATA</span>
+              <span class="t-stat">28-area survey</span>
+              <span class="t-desc">Lap times, joint angles from side photos, and a full-body discomfort rating after every run.</span>
+            </div>
+          </div>
+          <div class="t-step">
+            <span class="t-node">04</span>
+            <div class="t-card">
+              <span class="t-label">RESULT</span>
+              <span class="t-stat">Pedals moved</span>
+              <span class="t-desc">Changed where the pedals sit relative to the driver and their angle of travel.</span>
+            </div>
+          </div>
+        </div>
+        <dl class="kv-list">
+          <div class="kv-row"><dt>Reference point</dt><dd>the driver's heel point, the same reference SAE J1100 uses, so every position goes straight into CAD</dd></div>
+          <div class="kv-row"><dt>Rig</dt><dd>HVL driving sim set up in the ARG27 monocoque layout, running iRacing</dd></div>
+          <div class="kv-row"><dt>Steering feel</dt><dd>7 Nm of wheel torque, adjusted ±5 Nm based on driver feedback</dd></div>
+          <div class="kv-row"><dt>Driver loads</dt><dd>instrumented ARG26 with linear potentiometers and gathered whole-system driver load data</dd></div>
+        </dl>
+
+        <h3>My Parts This Year</h3>
+        <div class="hero-media-frame" style="margin-bottom: 18px;">
+          <div class="hero-media contain" style="aspect-ratio: 16/9;">
+            <img src="ergo-my-parts.jpg" alt="Seat, firewall, and head restraint render">
+            <span class="bento-cap">SEAT · FIREWALL · HEAD RESTRAINT</span>
+          </div>
+        </div>
+        <div class="compare">
+          <div class="compare-head"><span>PART</span><span>ARG26</span><span></span><span class="new">ARG27 (PROJ.)</span><span>CHANGE</span></div>
+          <div class="compare-row"><span class="metric">Seat</span><span class="old">0.800 kg</span><span class="arrow">→</span><span class="new">0.840 kg</span><span class="delta neutral">+4.8%</span></div>
+          <div class="compare-row"><span class="metric">Head restraint</span><span class="old">0.900 kg</span><span class="arrow">→</span><span class="new">0.852 kg</span><span class="delta">−5.3%</span></div>
+          <div class="compare-row"><span class="metric">Firewall</span><span class="old">0.890 kg</span><span class="arrow">→</span><span class="new">0.668 kg</span><span class="delta">−24.9%</span></div>
+          <div class="compare-row"><span class="metric">Total</span><span class="old">2.590 kg</span><span class="arrow">→</span><span class="new">2.360 kg</span><span class="delta">−8.9%</span></div>
+        </div>
+        <div class="callout-grid three">
+          <div class="callout-card">
+            <div class="callout-label">SEAT</div>
+            <div class="callout-title">Custom-molded, mounted on keyholes</div>
+            <div class="callout-desc">Prepreg carbon over a 0.125 in Nomex core, shaped from scanned drivers. Two nubs lock into bonded keyhole constraints and an upper bracket bolts in with 3 M5s. I cut the backing plate from 64 g to 25 g.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">FIREWALL</div>
+            <div class="callout-title">Thinner sheet and a new angle</div>
+            <div class="callout-desc">Down to 0.030 in aluminum: 1.4 kg on ARG25, 0.89 kg on ARG26, 0.67 kg now. I changed the angle so the Percy template and the HV harnessing fit, with 25 mm kept from the accumulator.</div>
+          </div>
+          <div class="callout-card">
+            <div class="callout-label">HEAD RESTRAINT</div>
+            <div class="callout-title">Built to the 900 N rule load</div>
+            <div class="callout-desc">A 0.5 in carbon sandwich panel with a CONFOR CF45 pad over 38 mm thick, mounted top and bottom on carbon links and welded tabs. The link mount has a 2.17 safety factor on yield in the 450 N load case.</div>
+          </div>
+        </div>
       </div>
     </div>
   </article>
@@ -511,8 +604,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="site.js?v=19"></script>
-<script src="motion.js?v=19"></script>
+<script src="site.js?v=20"></script>
+<script src="motion.js?v=20"></script>
 
 </body>
 </html>
